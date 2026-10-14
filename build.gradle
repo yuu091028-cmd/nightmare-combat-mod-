@@ -60,6 +60,8 @@ tasks.withType(ProcessResources).configureEach {
         expand replaceProperties
     }
 }
+
+// ForgeがMODとして正しく認識するためのマニフェストおよびリオブブタスク
 jar {
     manifest {
         attributes([
@@ -74,7 +76,6 @@ jar {
     }
 }
 
-// リオブスケール（Forge特有の難読化解除）を確実に行う設定
 tasks.named('jar', Jar).configure {
     finalizedBy 'reobfJar'
 }
