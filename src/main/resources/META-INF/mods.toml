@@ -6,4 +6,21 @@ license="All Rights Reserved"
 modId="nightmare"
 version="1.0.0"
 displayName="Nightmare Combat Mod"
-description="Jujutsu & Dragon Block inspired high-octane combat overhaul with bosses, black flashes, and item jackpots."
+authors="Nightmare"
+description='''
+Ultimate Combat Overhaul with unique mechanics.
+'''
+
+[[dependencies.nightmare]]
+modid="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.nightmare]]
+modid="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
