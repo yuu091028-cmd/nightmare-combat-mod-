@@ -43,7 +43,7 @@ minecraft {
 }
 
 dependencies {
-    implementation 'net.minecraftforge:forge:1.20.1-47.2.0'
+    minecraft 'net.minecraftforge:forge:1.20.1-47.2.0'
 }
 
 tasks.withType(ProcessResources).configureEach {
