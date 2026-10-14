@@ -60,3 +60,21 @@ tasks.withType(ProcessResources).configureEach {
         expand replaceProperties
     }
 }
+jar {
+    manifest {
+        attributes([
+                "Specification-Title"     : "nightmare",
+                "Specification-Vendor"    : "Nightmare",
+                "Specification-Version"   : "1",
+                "Implementation-Title"    : project.name,
+                "Implementation-Version"  : project.jar.archiveVersion,
+                "Implementation-Vendor"   : "Nightmare",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}
+
+// リオブスケール（Forge特有の難読化解除）を確実に行う設定
+tasks.named('jar', Jar).configure {
+    finalizedBy 'reobfJar'
+}
