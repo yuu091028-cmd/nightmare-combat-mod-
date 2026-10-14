@@ -12,17 +12,12 @@ base.archivesName = 'nightmarecombat'
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 repositories {
-    maven {
-        url = 'https://maven.minecraftforge.net/'
-    }
+    maven { url = 'https://maven.minecraftforge.net/' }
     mavenCentral()
 }
 
 minecraft {
     mappings channel: 'official', version: '1.20.1'
-    
-    // キャッシュの競合を防ぐための設定を追加
-    reobf = false
 
     runs {
         client {
