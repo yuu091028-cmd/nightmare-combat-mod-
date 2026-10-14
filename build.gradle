@@ -12,7 +12,10 @@ base.archivesName = 'nightmarecombat'
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 repositories {
-    maven { url = 'https://maven.minecraftforge.net/' }
+    maven {
+        name = "Forge"
+        url = "https://maven.minecraftforge.net/"
+    }
     mavenCentral()
 }
 
