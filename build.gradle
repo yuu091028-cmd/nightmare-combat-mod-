@@ -13,8 +13,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 repositories {
     maven {
-        name = "Forge"
-        url = "https://maven.minecraftforge.net/"
+        url = 'https://maven.minecraftforge.net/'
     }
     mavenCentral()
 }
